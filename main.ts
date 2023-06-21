@@ -1,8 +1,11 @@
 //% color="#AA278D"
-namespace robot {
+namespace robots {
+    
+    
+    
     //% block
     export function moveForward() {
-    
+            
         direction = count % 4
         pause(100)
         if (direction == 0) {
@@ -217,17 +220,6 @@ namespace robot {
         }
     
     }
-    //%block
-    export function beginScreen() {
     
-        count = 8000
-        tiles.setTilemap(tilemap`
-            level1
-        `)
-        robot = sprites.create(assets.image`
-            Robot Up
-        `, SpriteKind.Player)
-        grid.place(robot, tiles.getTileLocation(1, 5))
-    }
     
 }
