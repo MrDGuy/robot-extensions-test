@@ -87,8 +87,8 @@ namespace robot {
         direction = count % 4
     }
 
-    
-    function canMove(inputDir: string): boolean {
+    //%block
+    export function canMove(inputDir: string): boolean {
         if (inputDir == "left") {
             if (direction == 0) {
                 if (tiles.tileIsWall(grid.add(grid.getLocation(robot), -1, 0))) {
